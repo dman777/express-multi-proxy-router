@@ -12,7 +12,8 @@ HttpError.prototype = Object.create(Error.prototype);
 HttpError.prototype.constructor = HttpError;
 
 //credit goes to esailija(bluebird) for writing this awesome 
-//script below.
+//script below. Oringially written for general http requests using
+//bluebird and restler.
 
 var methods = ["get",
     "patch",
