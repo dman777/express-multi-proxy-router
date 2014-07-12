@@ -11,6 +11,8 @@ function HttpError(message, statusCode, headers, body) {
 HttpError.prototype = Object.create(Error.prototype);
 HttpError.prototype.constructor = HttpError;
 
+//credit goes to esailija(bluebird) for writing this awesome 
+//script below.
 
 var methods = ["get",
     "patch",
@@ -37,7 +39,7 @@ methods.forEach(function(method) {
             //Express.js app.send() can not handle response object
             //because of `Converting circular structure to JSON`
             //so on any error or failure, return data instead
-            //of response and hope for the best in life
+            //of response and hope for the best in life - Darin
             ret.on("fail", function(data, response) {
                 err = new HttpError(response.message, response.statusCode,
                                     response.headers, data);
