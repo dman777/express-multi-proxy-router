@@ -42,6 +42,7 @@ function proxyUrl() {
                 //Make Call...do proxy
                 uri = 'https://'+host;
                 console.log(method);
+                if (method == "post") { method = "postJson"; }
                 rest[method](uri, body).then(
                     function(response) {
                         res.send(response);
