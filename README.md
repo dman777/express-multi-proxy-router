@@ -14,5 +14,4 @@ Suppose you are developing a web application that makes API requests from the cl
 
 *Assumeing you already have a express.js or some kind of generator project already established:*
 
-1. In the directory of your project, where you see `package.json` and `npm_modules`,
-   simply type `npm install express-multi-proxy-router`
+1. In the directory of your project, where you see `package.json` and `npm_modules`, simply type `npm install express-multi-proxy-router`
