@@ -7,7 +7,7 @@
 
 **Typical scenerio:**
 
-Suppose you are developing a web application that makes API requests from the client browser. Most likely, you will your browser will not allow you to because you will be breaking the pesky 'Same-origin policy'. To over come this, instead your express.js web server must send out http request and deliever the response back to the web client. Thus, this is known as proxying the http request(your api call out) from your `browser client -> to the express.js web server -> to the new host`. This module will allow you to do this. In addition, you can use as many proxies/routes as you would like.
+Suppose you are developing a web application that makes API requests from the client browser. Most likely, your browser will not allow you to because you will be breaking the pesky 'Same-origin policy'. To over come this, your express.js web server must send out http request and deliever the response back to the web client. Thus, this is known as proxying the http request(your api call out) from your `browser client -> to the express.js web server -> to the new host`. This module will allow you to do this. In addition, you can use as many proxies/routes as you would like.
 
 **Http verbs Supported:**
 patch, post, put, del, and head.
