@@ -2,7 +2,7 @@
 ##express-multi-proxy-router
 
 #####Multiple router based on URL(s) for Express.js
-#####Version 1.0.1 Stable
+#####Version 1.0.x Stable
 ######Todo: XML Support for body/payload. 
 
 **Typical scenerio:**
