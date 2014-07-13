@@ -7,7 +7,7 @@
 
 **Typical scenerio:**
 
-Suppose you are developing a web application that makes API requests from the client browser. Most likely, you will your browser will not allow you to because you will be breaking the pesky 'Same-origin policy'. To over come this, instead your express.js web server must send out http request and deliever the response back to the web client. Thus, this is known as proxying the http request(your api call out) from your `browser client -> to the express.js web server -> to the new host`. This module will allow you to do this. In addition, you can use as many proxies/routes as you would like.
+Suppose you are developing a web application that makes API requests from the client browser. Most likely, your browser will not allow you to because you will be breaking the pesky 'Same-origin policy'. To over come this, your express.js web server must send out http request and deliever the response back to the web client. Thus, this is known as proxying the http request(your api call out) from your `browser client -> to the express.js web server -> to the new host`. This module will allow you to do this. In addition, you can use as many proxies/routes as you would like.
 
 **Http verbs Supported:**
 patch, post, put, del, and head.
@@ -42,7 +42,7 @@ Let's say in your client browser code you call out to /api/v1/goto-identity-api 
 identity.api.foobar.com/v2.0/tokens = /api/v1/goto-identity-api
 hosting.company.servers/api/servers = /api/v2/get-list-of-servers
 ```
-After this is set, when the client browser sends out a http request to `/api/v1/goto-identity-api`, express.js will see that the url is `/api/v1/goto-identity-api`. It will then send out it's own request to `identity.api.foobar.com/v2.0/tokens` and return the response back to the client browser. 
+After this is set, when the client browser sends out a http request to `/api/v1/goto-identity-api`, express.js will see that the url is `/api/v1/goto-identity-api`. It will then send out it's own request to `https://identity.api.foobar.com/v2.0/tokens` and return the response back to the client browser. 
 
 There is no limit to how many proxies you can add, add as many as you like.
 
