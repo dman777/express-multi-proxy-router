@@ -24,7 +24,7 @@ patch, post, put, del, and head.
 app.use(bodyParser());
 app.use(proxyUrl());
 ``` 
-4. At the top of your express.js configuration file(typically called `app.js`), place these 2 lines:
+4. At the top of that same express.js configuration file(typically called `app.js`), place these 2 lines:
 ```
 var bodyParser = require("body-parser");
 var proxyUrl = require("proxies_express_module"); 
