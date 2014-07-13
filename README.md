@@ -12,7 +12,7 @@ Suppose you are developing a web application that makes API requests from the cl
 **Http verbs Supported:**
 patch, post, put, del, and head.
 
-
+---
 **Installation instuctions:**
 
 *Assumeing you already have a express.js or some kind of generator project already established:*
@@ -29,7 +29,7 @@ app.use(proxyUrl());
 var bodyParser = require("body-parser");
 var proxyUrl = require("proxies_express_module"); 
 ```
-
+---
 **Usage:**
 Let's say in your client browser code you call out to /api/v1/goto-identity-api and /api/v2/get-list-of-servers. Both of these api's go to compeletley seperate hosts. You will modify your `proxies_config.ini` file located at `node_modules/express-multi-proxy-router/proxies_config.ini` with the following config:
 
