@@ -2,7 +2,7 @@
 ##express-multi-proxy-router
 
 #####Multiple router based on URL(s) for Express.js
-#####Version 1.0 Stable
+#####Version 1.0.0 Stable
 ######Todo: Nothing at the moment
 
 **Typical scenerio:**
