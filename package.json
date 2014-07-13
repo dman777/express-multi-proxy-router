@@ -1,0 +1,32 @@
+{
+  "name": "express-multi-proxy-router",
+  "version": "0.1.0",
+  "description": "Redirect/route http requests from client browser to express.js server to new host(s), based on url. Great for Ajax/API requests and overcoming avoiding same-origin policy restrictions. ",
+  "main": "express-multi-proxy-router",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dman777/express-multi-proxy-router.git"
+  },
+  "keywords": [
+    "express.js",
+    "proxy",
+    "routing",
+    "httprequest",
+    "ajax"
+  ],
+  "author": "Darin Hensley <coolio@ymail.com> (https://github.com/dman777)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dman777/express-multi-proxy-router/issues"
+  },
+  "homepage": "https://github.com/dman777/express-multi-proxy-router"
+},
+"dependencies": {
+      "express": ">= 4.4.3",
+      "body-parser": ">= 1.4.3",
+      "bluebird": ">= 2.1.3",
+      "restler": ">= 3.2.2"
+}
