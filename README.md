@@ -27,7 +27,7 @@ app.use(proxyUrl());
 4.At the top of that same express.js configuration file(typically called `app.js`), place these 2 lines:
 ```
 var bodyParser = require("body-parser");
-var proxyUrl = require("proxies_express_module"); 
+var proxyUrl = require("express-multi-proxy-router"); 
 ```
 ---
 **Usage and Configuration:**
