@@ -12,6 +12,13 @@ Suppose you are developing a web application that makes API requests from the cl
 **Http verbs Supported:**
 patch, post, put, del, and head.
 
+**Requirements(dependencies installed automatically)**:
+* Express 4.0 or greater. Note- the difference is body-parser is no longer built in, but a required module of express.js.
+* body-parser
+* bluebird promises
+* restler
+* ini
+
 ---
 **Installation instuctions:**
 
