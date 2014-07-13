@@ -30,7 +30,8 @@ var bodyParser = require("body-parser");
 var proxyUrl = require("proxies_express_module"); 
 ```
 ---
-**Usage:**
+**Usage and Configuration:**
+
 Let's say in your client browser code you call out to /api/v1/goto-identity-api and /api/v2/get-list-of-servers. Both of these api's go to compeletley seperate hosts. You will modify your `proxies_config.ini` file located at `node_modules/express-multi-proxy-router/proxies_config.ini` with the following config:
 
 ```ini
