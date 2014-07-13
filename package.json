@@ -22,11 +22,11 @@
   "bugs": {
     "url": "https://github.com/dman777/express-multi-proxy-router/issues"
   },
-  "homepage": "https://github.com/dman777/express-multi-proxy-router"
-},
-"dependencies": {
+  "homepage": "https://github.com/dman777/express-multi-proxy-router",
+  "dependencies": {
       "express": ">= 4.4.3",
       "body-parser": ">= 1.4.3",
       "bluebird": ">= 2.1.3",
       "restler": ">= 3.2.2"
+  }
 }
