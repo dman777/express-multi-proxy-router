@@ -42,7 +42,7 @@ Let's say in your client browser code you call out to /api/v1/goto-identity-api 
 identity.api.foobar.com/v2.0/tokens = /api/v1/goto-identity-api
 hosting.company.servers/api/servers = /api/v2/get-list-of-servers
 ```
-After this is set, when the client browser sends out a http request to `/api/v1/goto-identity-api`, express.js will see that the url is `/api/v1/goto-identity-api`. It will then send out it's own request to `identity.api.foobar.com/v2.0/tokens` and return the response back to the client browser. 
+After this is set, when the client browser sends out a http request to `/api/v1/goto-identity-api`, express.js will see that the url is `/api/v1/goto-identity-api`. It will then send out it's own request to `https://identity.api.foobar.com/v2.0/tokens` and return the response back to the client browser. 
 
 There is no limit to how many proxies you can add, add as many as you like.
 
