@@ -1,6 +1,6 @@
 {
   "name": "express-multi-proxy-router",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Redirect/route http requests from client browser to express.js server to new host(s), based on url. Great for Ajax/API requests and overcoming avoiding same-origin policy restrictions. ",
   "main": "./lib/proxies_express_module.js",
   "scripts": {
