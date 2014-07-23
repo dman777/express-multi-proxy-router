@@ -20,6 +20,9 @@ patch, post, put, del, and head.
 * ini
 
 ---
+
+*Note: place `process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';` into your express.js app.js or config file to turn off ssl cert checking. 
+
 **Installation instuctions:**
 
 *Assumeing you already have a express.js or some kind of generator project already established:*
