@@ -5,7 +5,7 @@
 #####Version 2.0.x Stable
 ######Todo: XML Support for body/payload. 
 
-######Whats new for Version 2.0:
+#####Whats new for Version 2.0:
 Better error handling:
 * Fixed issue when error could not be returned to client browser because of 
   circle dependency in json string returned
