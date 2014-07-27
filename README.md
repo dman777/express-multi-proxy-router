@@ -14,6 +14,7 @@ Better error handling:
 
 Enhancements: 
 * http/https now supported. Previously, only https.
+* Dynamic URLs will work. Previously, only static urls. 
 
 **Typical scenerio:**
 
