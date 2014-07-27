@@ -6,13 +6,14 @@
 ######Todo: XML Support for body/payload. 
 
 ######Whats new for Version 2.0:
-Better error handleing:
--Fixed issue when error could not be returned to client browser because of 
- circle dependency in json string returned
--Errors are now reported to console when error entails a http request that is local 
- to the server and can not be returned to client browser.
+Better error handling:
+* Fixed issue when error could not be returned to client browser because of 
+  circle dependency in json string returned
+* Errors are now reported to console when error entails a http request that is local 
+  to the server and can not be returned to client browser.
+
 Enhancements: 
--http/https now supported. Previously, only https.
+* http/https now supported. Previously, only https.
 
 **Typical scenerio:**
 
