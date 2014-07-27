@@ -2,8 +2,17 @@
 ##express-multi-proxy-router
 
 #####Multiple router based on URL(s) for Express.js
-#####Version 1.0.x Stable
+#####Version 2.0.x Stable
 ######Todo: XML Support for body/payload. 
+
+######Whats new for Version 2.0:
+Better error handleing:
+-Fixed issue when error could not be returned to client browser because of 
+ circle dependency in json string returned
+-Errors are now reported to console when error entails a http request that is local 
+ to the server and can not be returned to client browser.
+Enhancements: 
+-http/https now supported. Previously, only https.
 
 **Typical scenerio:**
 
@@ -49,9 +58,11 @@ Let's say in your client browser code you call out to /api/v1/goto-identity-api 
 #Add your hosts here in the format of 
 #host = url
 
-identity.api.foobar.com/v2.0/tokens = /api/v1/goto-identity-api
-hosting.company.servers/api/servers = /api/v2/get-list-of-servers
+https://identity.api.foobar.com/v2.0/tokens = /api/v1/goto-identity-api
+http://hosting.company.servers/api/servers = /api/v2/get-list-of-servers
 ```
+*notice that that `https` or `http` is specified. Be sure you specify this when setting yours.*
+
 After this is set, when the client browser sends out a http request to `/api/v1/goto-identity-api`, express.js will see that the url is `/api/v1/goto-identity-api`. It will then send out it's own request to `https://identity.api.foobar.com/v2.0/tokens` and return the response back to the client browser. 
 
 There is no limit to how many proxies you can add, add as many as you like.
